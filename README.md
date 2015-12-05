@@ -7,6 +7,7 @@ In my office I have some cheap AC named Chunlan which I want to operate remotly.
 Settings for MQTT and WIFI are in include/user_config.h.
 
 IR protocol is like this:
+```
  0 \ 11 Heat | 00 Cool
  1 / 10 Dry
  2
@@ -33,6 +34,7 @@ IR protocol is like this:
 21
 22
 23
+```
 
 Temp = Temp + 9
 
