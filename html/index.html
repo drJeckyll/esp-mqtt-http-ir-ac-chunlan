@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+		<script src="functions.js"></script>
+		<title>Office Automation</title>
+    </head>
+    <body>
+        <div data-role="page" id="home">
+	    <div class="ui-corner-all custom-corners" style="padding: 10px;">
+		<div class="ui-bar ui-bar-a">
+        	    <h3>Office Automation - <span id="temp_humid"></span></h3>
+		</div>
+
+		<div class="ui-body ui-body-a">
+		    <label for="service-power">Power:</label>
+		    <select name="service-power" id="service-power" data-role="slider">
+			<option value="off">Off</option>
+			<option value="on">On</option>
+		    </select>
+
+		    <fieldset data-role="controlgroup" data-type="horizontal">
+			<legend>Mode:</legend>
+			<input name="service-mode" id="service-mode-heat" value="heat" type="radio">
+			<label for="service-mode-heat">Heat</label>
+			<input name="service-mode" id="service-mode-cool" value="cool" type="radio">
+			<label for="service-mode-cool">Cool</label>
+		    </fieldset>
+
+		    <label>Temperature:</label>
+		    <div class="ui-grid-b">
+			<div class="ui-block-a">
+			    <a id="service-temp-down" href="#" class="ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-left">&nbsp;</a>
+			</div>
+			<div class="ui-block-b">
+			    <a id="service-temp" class="ui-btn ui-corner-all">18</a>
+			</div>
+			<div class="ui-block-c">
+			    <a id="service-temp-up" href="#" class="ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-right">&nbsp;</a>
+			</div>
+		    </div>
+
+		    <fieldset data-role="controlgroup" data-type="horizontal">
+			<legend>Fan:</legend>
+			<input name="service-fan" id="service-fan-1" value="1" type="radio">
+			<label for="service-fan-1">&nbsp;&nbsp;1&nbsp;&nbsp;</label>
+			<input name="service-fan" id="service-fan-2" value="2" type="radio">
+			<label for="service-fan-2">&nbsp;&nbsp;2&nbsp;&nbsp;</label>
+			<input name="service-fan" id="service-fan-3" value="3" type="radio">
+			<label for="service-fan-3">&nbsp;&nbsp;3&nbsp;&nbsp;</label>
+			<input name="service-fan" id="service-fan-auto" value="auto" type="radio">
+			<label for="service-fan-auto">Auto</label>
+		    </fieldset>
+
+		    <label for="service-swing">Swing:</label>
+		    <select name="service-swing" id="service-swing" data-role="slider">
+			<option value="off">Off</option>
+			<option value="on">On</option>
+		    </select>
+		</div>
+	    </div>
+        </div>
+    </body>
+</html>
